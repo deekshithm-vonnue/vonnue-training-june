@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Web tutorials" />
+    <title>Video and Audio Page</title>
+  </head>
+  <body>
+    <header>
+      <h1>Audio And Video Player</h1>
+    </header>
+    <main>
+      <video
+        width="640"
+        poster="https://share.google/2aObXc1kqwzrEywmg"
+        controls
+      >
+        <source
+          src="https://www.w3schools.com/html/mov_bbb.mp4"
+          type="video/webm"
+        />
+        <track
+          label="English"
+          srclang="en"
+          kind="captions"
+          src="sample.vtt"
+          default
+        />
+        <p>
+          Your brower dpes not support the video. Here is a
+          <a href="https://www.w3schools.com/html/mov_bbb.mp4"
+            >link to the video
+          </a>
+          instead.
+        </p>
+       
+      </video>
+       <details>
+            <summary>
+                View scene summary
+            </summary>
+            A bear looking at the beautifull butterfly flying around him with a background music.
+        </details>
+      <audio controls>
+        <source src="jean-paul-v-cerveau-dx27un-prof-de-math-286907.mp3" type="audio/mp3" />
+        <source src="jean-paul-v-cerveau-dx27un-prof-de-math-286907.mp3" type="audio/ogg" />
+        <p>
+          Your browser doesn't support this audio file. Here is a
+          <a href="https://www.w3schools.com/html/jean-paul-v-cerveau-dx27un-prof-de-math-286907.mp3">link to the audio</a> instead.
+        </p>
+      </audio>
+      <details>
+        <summary>
+            View audio content
+        </summary>
+        A phone ringtone
+      </details>
+    </main>
+  </body>
+</html>
+

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="web description" />
+    <title>image</title>
+  </head>
+  <body>
+    <main>
+      <div>
+        <img
+          srcset="
+            https://picsum.photos/id/235/200/300  400w,
+            https://picsum.photos/id/238/200/300  800w,
+            https://picsum.photos/id/248/200/300 1200w
+          "
+          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          src="https://picsum.photos/id/237/200/300"
+          alt="City"
+          loading="eager"
+        />
+      </div>
+      <div>
+        <img
+          srcset="
+            https://picsum.photos/id/241/200/300  400w,
+            https://picsum.photos/id/242/200/300  800w,
+            https://picsum.photos/id/243/200/300 1200w
+          "
+          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          src="https://picsum.photos/id/244/200/300"
+          alt="Raillines"
+          loading="lazy"
+        />
+      </div>
+      <div>
+        <img
+          srcset="
+            https://picsum.photos/id/256/200/300  400w,
+            https://picsum.photos/id/256/200/300  800w,
+            https://picsum.photos/id/257/200/300 1200w
+          "
+          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          src="https://picsum.photos/id/259/200/300"
+          alt="Mountians"
+          loading="lazy"
+        />
+      </div>
+      <div>
+        <img
+          srcset="
+            https://picsum.photos/id/266/200/300  400w,
+            https://picsum.photos/id/261/200/300  800w,
+            https://picsum.photos/id/263/200/300 1200w
+          "
+          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          src="https://picsum.photos/id/262/200/300"
+          alt="Desert"
+          loading="lazy"
+        />
+      </div>
+        <div>
+        <img
+          srcset="
+            https://picsum.photos/id/262/200/300  400w,
+            https://picsum.photos/id/221/200/300  800w,
+            https://picsum.photos/id/224/200/300 1200w
+          "
+          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          src="https://picsum.photos/id/262/200/300"
+          alt="Apartment"
+          loading="lazy"
+        />
+      </div>
+        <div>
+        <img
+          srcset="
+            https://picsum.photos/id/271/200/300  400w,
+            https://picsum.photos/id/272/200/300  800w,
+            https://picsum.photos/id/274/200/300 1200w
+          "
+          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          src="https://picsum.photos/id/275/200/300"
+          alt="Sky"
+          loading="lazy"
+        />
+      </div>
+        <div>
+        <img
+          srcset="
+            https://picsum.photos/id/281/200/300  400w,
+            https://picsum.photos/id/282/200/300  800w,
+            https://picsum.photos/id/284/200/300 1200w
+          "
+          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          src="https://picsum.photos/id/285/200/300"
+          alt="Balcony"
+          
+        />
+      </div>
+        <div>
+        <img
+          srcset="
+            https://picsum.photos/id/291/200/300  400w,
+            https://picsum.photos/id/292/200/300  800w,
+            https://picsum.photos/id/294/200/300 1200w
+          "
+          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          src="https://picsum.photos/id/295/200/300"
+          alt="Chopped onion"
+        />
+      </div>
+      <div>
+        <picture>
+        <source media="(min-width: 800px)" srcset="https://picsum.photos/id/297/2000/1000">
+         <img src="https://picsum.photos/id/297/400/400" alt="Art directed landscape example" loading="lazy">
+        </picture>
+        <picture>
+        <source media="(min-width: 800px)" srcset="https://picsum.photos/id/297/2000/1000">
+         <img src="https://picsum.photos/id/217/400/400" alt="Art directed landscape example" loading="lazy">
+        </picture>
+      </div>
+    </main>
+  </body>
+</html>
