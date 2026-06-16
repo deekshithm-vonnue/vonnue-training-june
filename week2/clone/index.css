@@ -1,0 +1,294 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.full-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.header {
+  background-image: url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=1440,height=648,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_desktop.png);
+  background-position: center center;
+  background-size: cover;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 650px;
+  justify-content: center;
+  padding: 0px 8px;
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
+
+.layout-3 {
+  width: 209px;
+  height: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-1 {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.doordash-container {
+  margin-left: 12px;
+  padding-top: 2px;
+}
+.fees {
+  font-family: DDNorms-Medium;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 16px;
+  padding-top: 4px;
+  height: 18px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  margin-top: 16px;
+  width: 100%;
+  top:0%;
+}
+.login-card {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.headline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 24px 0;
+  box-sizing: border-box;
+  height: 100%;
+  justify-content: center;
+}
+
+.headline-box {
+  color: white;
+  font-family:
+    "TTNormsProCond-Blk",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 40px;
+  padding: 0 0;
+  letter-spacing: -0.8;
+  margin: 0 0;
+  text-decoration-style: solid;
+}
+
+.sign-in-button {
+  background-color: rgb(235, 23, 0);
+  text-align: center;
+  padding: 0 12px;
+  font-family: DDNorms-Medium;
+  min-height: 40px;
+  border-radius: 20px;
+  border: 0px solid white;
+}
+
+.sign-up-button {
+  background-color: white;
+  text-align: center;
+  padding: 0 12px;
+  font-family: DDNorms-Medium;
+  min-height: 40px;
+  border-radius: 20px;
+  border: 0px solid white;
+  margin-left: 5px;
+}
+
+.sign-in-text {
+  color: white;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.sign-up-text {
+  color: rgb(96, 96, 96);
+  font-size: 18px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 22px;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+}
+
+.email-container {
+  width: 408px;
+  height: 56px;
+  background-color: white;
+  border-radius: 9999px;
+}
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 8px;
+  width: 380px;
+  height: 40px;
+  border-radius: 9999px;
+}
+.input-box {
+  width: 292px;
+  height: 22px;
+  margin-right: 12px;
+}
+.location {
+  margin-right: 12px;
+  text-align: center;
+}
+input {
+  font-family: DDNorms-Medium;
+  font-size: 16px;
+  font-weight: 500;
+  width: 292px;
+  height: 22px;
+  margin: 12px;
+  border: none;
+  outline: none;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.arrow-button-container {
+  background-color: red;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-button {
+  color: white;
+  background: none;
+  outline: none;
+  border: none;
+}
+.save-current-location {
+  display: flex;
+  justify-content: space-between;
+  width: 396px;
+  height: 32px;
+  margin-top: 16px;
+}
+
+.save-address {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 204.547px;
+  height: 32px;
+  background-color: white;
+  border-radius: 999px;
+  border: none;
+  padding: 0 12px;
+}
+.saved-address-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: rgb(25, 25, 25);
+  font-family: DDNorms-Medium;
+  font-size: 14px;
+  font-weight: 700;
+  width: 160px;
+  padding-left: 5px;
+  height: 20px;
+}
+.current-location {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: Arial;
+  font-size: 14px;
+  width: 179px;
+  height: 32px;
+  background-color: white;
+  border-radius: 999px;
+  border: none;
+  padding: 0 12px;
+}
+
+.current-location-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: rgb(25, 25, 25);
+  font-family: DDNorms-Medium;
+  font-size: 14px;
+  font-weight: 700;
+  width: 160px;
+  padding-left: 5px;
+  height: 20px;
+}
+
+@font-face {
+  font-family: "TTNorms-Regular";
+  src: url("https://img.cdn4dd.com/t/TTNorms-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: TTNorms-Medium;
+  src: url(https://img.cdn4dd.com/t/TTNorms-Medium.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: TTNorms-Bold;
+  src: url(https://img.cdn4dd.com/t/TTNorms-Bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: TTNorms-ExtraBold;
+  src: url(https://img.cdn4dd.com/t/TTNorms-ExtraBold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: DDNorms-Medium;
+  src: url("https://img.cdn4dd.com/t/dd-norms/DDNorms-Medium.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: DDNorms-Bold;
+  src: url(https://img.cdn4dd.com/t/dd-norms/DDNorms-Bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: DDNorms-ExtraBold;
+  src: url(https://img.cdn4dd.com/t/dd-norms/DDNorms-ExtraBold.woff2)
+    format("woff2");
+}
+
+@font-face {
+  font-family: DDNorms-Regular;
+  src: url("https://img.cdn4dd.com/t/dd-norms/DDNorms-Regular.woff2")
+    format("woff2");
+}
