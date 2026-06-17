@@ -1,37 +1,33 @@
-
 .container {
   display: grid;
   gap: 5px;
   background-color: aquamarine;
-  
 }
 
-.auto-fill{
-grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+.auto-fill {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 .auto-fit {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-
-.item{
+.item {
   background-color: aqua;
   font-size: 30px;
   text-align: center;
- 
 }
 
-.item-6{
-    grid-column:  auto / -1;
+.item-6 {
+  grid-column: auto / -1;
 }
 
-.item-1{
+.item-1 {
   grid-column: span 2;
 }
 
-.item-4{
-    grid-row: span 2;
+.item-4 {
+  grid-row: span 2;
 }
-.spanning{
-    grid-template-columns: repeat(3 , 1fr);
+.spanning {
+  grid-template-columns: repeat(3, 1fr);
 }

@@ -22,7 +22,7 @@
 .fr-units {
   margin-top: 5px;
   grid-template-columns: 1fr 2fr 1fr;
-  gap:20px;
+  gap: 20px;
 }
 
 .auto-units {
@@ -34,18 +34,18 @@
   grid-template-columns: minmax(200px, 1fr) 500px 200px;
 }
 
-.repeat{
-    margin: 5px 0;
-grid-template-columns: repeat(3,1fr);
+.repeat {
+  margin: 5px 0;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.repeat-auto{
-    margin: 5px 0;
-    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+.repeat-auto {
+  margin: 5px 0;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
-.overflow{
-    grid-template-columns: repeat(2,1fr);
-    grid-auto-rows: minmax(100px,auto);
+.overflow {
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(100px, auto);
 }
 .item {
   background-color: lightblue;
