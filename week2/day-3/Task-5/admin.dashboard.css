@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --color-primary-light: #567891;
+  --color-primary-pink: #f234f1;
+  --color-primary-green: #078960;
+}
+.container {
+  display: grid;
+  grid-template-columns: 240px 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 2px;
+  width: 100%;
+  height: 100vh;
+  grid-template-areas:
+    "header header header"
+    "sidebar grids  grids "
+    "sidebar chart chart "
+    "sidebar panel-1 panel-2 ";
+  text-align: center;
+}
+
+.header {
+  grid-area: header;
+  background-color: blue;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  height: 100%;
+  background-color: red;
+}
+
+.grids {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "card-1 card-2"
+    "card-3 card-4";
+  grid-area: grids;
+  background-color: yellow;
+  gap: 5px;
+}
+
+.chart {
+  grid-area: chart;
+  background-color: yellowgreen;
+}
+
+.panel-1 {
+  grid-area: panel-1;
+  background-color: orange;
+}
+
+.panel-2 {
+  grid-area: panel-2;
+  background-color: lightcoral;
+}
+
+.card-1 {
+  grid-area: card-1;
+  background-color: var(--color-primary-green);
+}
+
+.card-2 {
+  grid-area: card-2;
+  background-color: var(--color-primary-pink);
+}
+.card-3 {
+  grid-area: card-3;
+  background-color: lightsalmon;
+}
+
+.card-4 {
+  grid-area: card-4;
+  background-color: var(--color-primary-light);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 60px 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2px;
+    width: 100%;
+    height: 100vh;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "grids "
+      "chart" "panel-1 " "panel-2";
+    text-align: center;
+  }
+}
