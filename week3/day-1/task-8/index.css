@@ -1,0 +1,61 @@
+[data-theme="dark"] {
+  body {
+    background-color: rgb(51, 43, 43);
+    color: antiquewhite;
+  }
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.overlay {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 1;
+  margin: 25px 0 0 0;
+  background-color: lightblue;
+  opacity: 0.7;
+  position: fixed;
+  height: 100%;
+  font-size: 40px;
+  width: 10p0x;
+  transition: 1s;
+}
+
+.drawer-log {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay a {
+  padding: 22px 0 0 0;
+  text-decoration: none;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: red;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.overlay.open {
+  display: flex;
+}
+
+@media (min-width: 1024px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+}
