@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;;
+}
+
+
+.logo{
+   margin:24px 24px 0;
+   padding-left: 8.2px;
+}
+
+.header-border{
+    padding: 12px 0 0 0;
+    border-bottom: 0.1px solid rgb(84, 89, 105);
+}
