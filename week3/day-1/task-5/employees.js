@@ -56,6 +56,6 @@ console.log(Object.entries(c));
 console.log(Object.keys(c));
 console.log(Object.values(c));
 
-const duplicateUser=structuredClone(user)
-duplicateUser.id=5;
-console.log(user)
+const duplicateUser = structuredClone(user);
+duplicateUser.id = 5;
+console.log(user);
