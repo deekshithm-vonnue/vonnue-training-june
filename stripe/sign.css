@@ -13,3 +13,14 @@
     padding: 12px 0 0 0;
     border-bottom: 0.1px solid rgb(84, 89, 105);
 }
+
+.sign-full-container{
+    display: flex;
+    flex-direction: column;
+    margin: 8px 12px 0 12px;
+}
+
+.sign-form{
+   padding: 20px 20px 0 20px;
+}
+
