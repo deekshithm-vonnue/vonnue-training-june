@@ -7,12 +7,16 @@ topObj.addEventListener("click", (e) => {
   console.log("top-conatiner catched, " + "source element: " + e.srcElement.id);
 });
 
-middle.addEventListener("click", (e) => {
-  e.stopPropagation();
-  console.log(
-    "middle-conatiner catched, " + "source element: " + e.srcElement.id,
-  );
-});
+middle.addEventListener(
+  "click",
+  (e) => {
+    e.stopPropagation();
+    console.log(
+      "middle-conatiner catched, " + "source element: " + e.srcElement.id,
+    );
+  },
+  true,
+);
 
 bottom.addEventListener("click", (e) => {
   e.stopPropagation();

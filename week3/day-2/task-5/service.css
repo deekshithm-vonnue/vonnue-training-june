@@ -1,22 +1,22 @@
-.search-container{
- display: flex;
- justify-content: center;
- gap: 13px;
+.search-container {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
 }
 
-input{
-    width: 50%;
-    height: 40px;
+input {
+  width: 50%;
+  height: 40px;
 }
 
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
 
-.highlight{
-    background-color: yellow;
+.highlight {
+  background-color: yellow;
 }
 
-.product{
-    color: red;
+.product {
+  color: red;
 }

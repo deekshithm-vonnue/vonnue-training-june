@@ -35,9 +35,9 @@ function gradeToLetter_switch(score) {
   return grade;
 }
 console.log("switch");
-console.log(gradeToLetter_switch(89));
+console.log(gradeToLetterSwitch(89));
 
-function gradeToLetter_ternary(score) {
+function gradeToLetterTernary(score) {
   return score > 90
     ? "A"
     : score > 80
@@ -49,9 +49,9 @@ function gradeToLetter_ternary(score) {
           : "F";
 }
 console.log("ternary");
-console.log(gradeToLetter_ternary(65));
+console.log(gradeToLetterTernary(65));
 
-function gradeToLetter_lookup(score) {
+function gradeToLetterLookup(score) {
   var lookup = {
     90: "A",
     80: "B",
@@ -63,7 +63,7 @@ function gradeToLetter_lookup(score) {
   return lookup[grade];
 }
 console.log("lookup");
-console.log(gradeToLetter_lookup(89));
+console.log(gradeToLetterLookup(89));
 
 console.log("1M calls");
 console.time();
@@ -74,24 +74,24 @@ console.timeEnd();
 
 console.time();
 for (let i = 0; i < 1000000; i++) {
-  gradeToLetter_switch(85);
+  gradeToLetterSwitch(85);
 }
 console.timeEnd();
 
 console.time();
 for (let i = 0; i < 1000000; i++) {
-  gradeToLetter_ternary(75);
+  gradeToLetterTernary(75);
 }
 console.timeEnd();
 
 console.time();
 for (let i = 0; i < 1000000; i++) {
-  gradeToLetter_lookup(98);
+  gradeToLetterLookup(98);
 }
 console.timeEnd();
 
 let items = [3, 4, 5, 6, 6];
-function processQueue_while(items) {
+function processQueueWhile(items) {
   let processing = 0;
   while (processing < items.length) {
     console.log(`processing: ${items[processing]}`);
@@ -99,9 +99,9 @@ function processQueue_while(items) {
   }
 }
 console.log("while");
-processQueue_while(items);
+processQueueWhile(items);
 
-function processQueue_do_while(items) {
+function processQueueDoWhile(items) {
   let processing = 0;
   do {
     console.log(`processing: ${items[processing]}`);
@@ -109,7 +109,7 @@ function processQueue_do_while(items) {
   } while (processing < items.length);
 }
 console.log("do_while");
-processQueue_do_while(items);
+processQueueDoWhile(items);
 console.log("for");
 function processQueue(items) {
   for (let item of items) {

@@ -10,7 +10,7 @@ class ValidationError extends Error {
 class TypeError extends Error {
   constructor(statusCode, message, field) {
     super(message);
-    this.name = "ValidationError";
+    this.name = "TypeError";
     this.field = field;
     this.statusCode = statusCode;
   }
@@ -19,7 +19,7 @@ class TypeError extends Error {
 class RangeError extends Error {
   constructor(statusCode, message, field) {
     super(message);
-    this.name = "ValidationError";
+    this.name = "RangeError";
     this.field = field;
     this.statusCode = statusCode;
   }
@@ -55,14 +55,14 @@ const overlayObj = document.getElementById("overlay");
 
 setTimeout(function () {
   notThere();
-}, 0);
+}, 2000);
 
  window.onerror = (...e) => {
    overlayObj.innerHTML = e;
  };
 
   
-const overlay = document.getElementById("overlay_1");
+const overlay = document.getElementById("overlayForPromise");
 
 Promise.reject(new Error("fail"));
 window.addEventListener("unhandledrejection", (event) => {
