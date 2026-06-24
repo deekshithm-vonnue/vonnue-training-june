@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Payment Form</h1>
+    </header>
+    <main>
+      <form>
+        <fieldset>
+          <legend>Field marked * are required</legend>
+          <fieldset>
+            <legend>Delivery Address</legend>
+            <label for="name">* Name</label>
+            <input type="text" id="name" required /><br /><br />
+            <label for="address-1"> Address line 1</label>
+            <input type="text" id="address-1" /><br /><br />
+            <label for="address-2"> Address line 2</label>
+            <input type="text" id="address-2" /><br /><br />
+            <label for="city"> City</label>
+            <input type="text" id="city" /><br /><br />
+            <label for="postcode">* Postcode </label>
+            <input type="number" id="postcode" required /><br /><br />
+            <label for="counthy">* Counthy</label>
+            <input
+              list="counthies"
+              id="counthy"
+              name="counthy"
+              required
+            /><br /><br />
+            <datalist id="counthies">
+              <option>India</option>
+              <option>UAE</option>
+              <option>Qatar</option>
+              <option>Yemen</option>
+              <option>Russia</option>
+              <option>China</option>
+              <option>Iceland</option>
+              <option>Sweden</option>
+              <option>Japan</option>
+              <option>Brazil</option>
+              <option>Chile</option>
+              <option>Germany</option>
+              <option>Belgium</option>
+              <option>Spain</option>
+              <option>South Korea</option>
+              <option>North Korea</option>
+              <option>Nepal</option>
+              <option>Buttan</option>
+              <option>England</option>
+              <option>Iran</option>
+            </datalist>
+          </fieldset>
+          <fieldset>
+            <legend>Payment Details</legend>
+            <label for="cardnumber">* Card number</label>
+            <input
+              type="text"
+              id="cardnumber"
+              name="cardnumber"
+              maxlength="16"
+              pattern="[0-9]{0,16}"
+              required
+            /><br /><br />
+            <label for="expirymonth">* Expiry month and year</label>
+            <input
+              type="month"
+              id="expirymonth"
+              name="expirymonth"
+              required
+            /><br /><br />
+            <label for="cvv">* CVV</label>
+            <input
+              type="password"
+              maxlength="4"
+              aria-describedby="tooltip"
+              id="cvv"
+              required
+            />
+            <p id="tooltip">3 or 4 digits on the back of your card</p>
+          </fieldset>
+          <fieldset>
+            <legend>Order Notes</legend>
+            <label for="comment">Comments: </label><br>
+            <textarea rows="10" cols="60" maxlength="500" id="comment"></textarea>
+          </fieldset>
+          <br />
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registhation Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Registhation Form</h1>
+    </header>
+    <main>
+      <form action="/action_page.php" method="get">
+        <fieldset>
+          <legend>Personal Details</legend>
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            pattern="[A-Za-z]"
+            required
+          /><br /><br />
+          <label for="email">Email</label>
+          <input type="email" id="email" required /><br /><br />
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" pattern="[0-9]" required /><br /><br />
+          <label for="dob">Date of birth</label>
+          <input type="date" id="dob" required /> <br /><br />
+          <label for="age">Age</label>
+          <input type="number" id="age" min="18" /><br /><br />
+          <label> Gender: </label>
+          <input type="radio" name="gender" value="male" id="male"/>
+          <label for="male">Male</label>
+          <input type="radio" name="gender" value="female" id="female"/>
+          <label for="female">Female</label><br /><br />
+          <label for="linkedin">Linkendin Profile</label>
+          <input type="url" id="linkedin" name="profile" /><br /><br />
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Account</legend>
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            pattern="[A-Za-z0-9]"
+            minlength="8"
+            maxlength="20"
+            required
+          /><br /><br />
+          <label for="password">New Password</label>
+          <input
+            type="password"
+            id="password"
+            pattern="/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/"
+            required
+          /><br /><br />
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            id="confirm-password"
+            pattern="/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/"
+            required
+          /><br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <label for="jobtitle">Job title: </label>
+          <input list="job-roles" id="jobtitle" name="jobtitle" /><br /><br />
+          <datalist id="job-roles">
+            <option value="Web Intern"></option>
+            <option value="ML Intern"></option>
+            <option value="AI Intern"></option>
+            <option value="Cloud Intern"></option>
+            <option value="Devops Intern"></option>
+            <option value="Software Tester Intern"></option>
+            <option value="Data Science Intern"></option>
+            <option value="Operation Intern"></option>
+          </datalist>
+          <label for="month">Joining Month</label>
+          <input type="month" name="month" id="month"/><br /><br />
+          <label for="period">Period</label>
+          <input type="week" id="period" /><br /><br />
+          <label for="notification">Notification Radio</label>
+          <input type="radio" name="notification" id="notification"/><br /><br />
+          <label >Skill level range</label><br><br>
+          <label for="java">Java</label>
+          <input type="range" id="java" name="java" /><br /><br />
+          <label for="dsa">Data Structures and Alogrithms</label>
+          <input type="range" id="dsa" name="dsa" /><br /><br />
+          <label for="database">Database</label>
+          <input type="range" id="database" name="database" /><br /><br />
+          <label for="profile-color">Profile colour picker</label>
+          <input
+            type="color"
+            id="profile-color"
+            name="profile-color"
+          /><br /><br />
+          <label for="cv">Upload cv</label>
+          <input type="file" id="cv" required /><br /><br />
+          <label for="current">Current Date and Time</label>
+          <input type="datetime-local" id="current" name="current" />
+        </fieldset>
+
+        <input type="checkbox" id="correctness" required />
+        <label for="correctness">All the information given are correct</label
+        ><br /><br />
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
