@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.calender-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  width: 50%;
+  font-size: large;
+  grid-auto-rows: 30px;
+  margin-top: 50px;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.days,
+.date,
+.week,
+.starting-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  background-color: burlywood;
+}
+.date {
+  background-color: lightblue;
+}
+#sat {
+  color: red;
+}
+#sun {
+  color: red;
+}
+
+.days {
+  border: 2px solid black;
+}
+
+.today::before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  border: 1px solid red;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+@media (max-width: 480px) {
+  .calender-container {
+    grid-template-columns: 1fr;
+  }
+}
