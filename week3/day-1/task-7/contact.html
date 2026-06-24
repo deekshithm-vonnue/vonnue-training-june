@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ready to start your next project? Get in touch with our expert team today to schedule a consultation."
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="dark-mode.js" defer></script>
+    <title>Contact</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <nav>
+          <a href="index.html" aria-current="page">Home</a> |
+          <a href="about.html">About</a> |
+          <a href="services.html">Services</a> | <a href="team.html">Team</a> |
+          <a href="contact.html">Contact</a> |
+        </nav>
+      </div>
+      <div>
+        <input type="checkbox" id="dark" name="dark" onclick="darkMode()" />
+        <label for="dark">dark</label>
+      </div>
+    </header>
+    <main>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required /><br /><br />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required /><br /><br />
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone" required /><br /><br />
+        <label for="department">Department</label>
+        <select name="department" id="department">
+          <option value="Development">Development</option>
+          <option value="operation">Operation</option></select
+        ><br /><br />
+        <label for="message">Message</label><br /><br />
+        <textarea id="message" rows="10" cols="30"></textarea><br /><br />
+        <label for="newletter">Subscribe to our weekly newsletter</label>
+        <input type="checkbox" id="newletter" name="newletter" /><br /><br />
+        <button type="submit">Submit</button>
+      </form>
+
+      <section>
+        <h2>Google Map</h2>
+        <div>
+          <iframe
+            title="Google Maps of Xeon"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.4768836437775!2d76.23974257590525!3d11.660577042261892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6097295a1d8ad%3A0xb302b72edc08e0db!2sVonnue%20Innovations%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1781243220614!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+      <section>
+        <h2>Address</h2>
+        <address>
+          3nd Floor Key Tee Tower, Sultan Bathery, <br />
+          Kerala, India - 673592 <br />
+          <br />
+        </address>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <p>&copy; 2026 Xeon. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
