@@ -89,3 +89,60 @@ for (let i = 0; i < 1000000; i++) {
   gradeToLetter_lookup(98);
 }
 console.timeEnd();
+
+let items = [3, 4, 5, 6, 6];
+function processQueue_while(items) {
+  let processing = 0;
+  while (processing < items.length) {
+    console.log(`processing: ${items[processing]}`);
+    processing++;
+  }
+}
+console.log("while");
+processQueue_while(items);
+
+function processQueue_do_while(items) {
+  let processing = 0;
+  do {
+    console.log(`processing: ${items[processing]}`);
+    processing++;
+  } while (processing < items.length);
+}
+console.log("do_while");
+processQueue_do_while(items);
+console.log("for");
+function processQueue(items) {
+  for (let item of items) {
+    console.log(`processing: ${item}`);
+  }
+}
+processQueue(items);
+
+let users = {
+  deekshith: {
+    email: "deekshith@gmail.com",
+    role: "admin",
+  },
+  deeku: {
+    email: "deekku",
+    role: "admin",
+  },
+  rida: {
+    email: "rida@j.com",
+    role: "worker",
+  },
+};
+
+function validateUser(user) {
+  if (
+    user in users &&
+    users[user].email &&
+    users[user].email.includes("@") &&
+    users[user].role == "admin"
+  ) {
+    console.log("validated");
+  } else {
+    console.log("invalid");
+  }
+}
+validateUser("deekshith");
