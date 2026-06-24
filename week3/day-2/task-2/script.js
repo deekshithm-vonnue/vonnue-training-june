@@ -14,6 +14,6 @@ todoList.addEventListener("click", (e) => {
           >
           <button class="delete-button">delete</button>
         </li>`;
-     e.target.closest("ul").appendChild(newlist);
+    e.target.closest("ul").appendChild(newlist);
   }
 });
