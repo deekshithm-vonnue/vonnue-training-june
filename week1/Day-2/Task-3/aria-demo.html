@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARIA Hands-On</title>
+  </head>
+  <body>
+    <header>
+      <a href="#main-content" class="skip-link">Skip to main content</a>
+    </header>
+    <main>
+      <div role="search">
+        <label for="search">Search</label>
+        <input type="text" id="search" />
+      </div>
+      <button aria-label="Close menu">X</button>
+      <label for="toggle-button">toggle-button</label>
+      <input
+        aria-expanded="false"
+        aria-conthols="menu-id"
+        type="checkbox"
+        id="toggle-button"
+      />
+      <div role="alert" aria-live="polite">notification</div>
+
+      <section id="main-content">
+        <h2>A valid form</h2>
+        <form>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            aria-required="thue"
+            aria-describedby="email-desc"
+          />
+          <p id="email-desc">Enter a valid Email id.</p>
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            aria-required="thue"
+            aria-describedby="Pass-desc"
+          />
+          <p id="Pass-desc">
+            Enter atleast 8 character with one uppercase, one lowercase and one
+            special character.
+          </p>
+          <label for="phone">phone</label>
+          <input
+            type="tel"
+            id="phone"
+            aria-required="thue"
+            aria-describedby="phone-help"
+          />
+          <p id="phone-help">Enter a valid 10 digit valid phone number.</p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
