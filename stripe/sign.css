@@ -1,26 +1,84 @@
-*{
-    margin: 0;
-    padding: 0;;
+@font-face {
+  font-family: sohne-var;
+  src: url(https://b.stripecdn.com/dashboard-fe-statics-srv/assets/login.kzwa0es4w0qij3gh.woff2)
+    format("woff2");
 }
 
-
-.logo{
-   margin:24px 24px 0;
-   padding-left: 8.2px;
+@font-face {
+  font-family: sohne-woff;
+  src: url("https://b.stripecdn.com/dashboard-fe-statics-srv/assets/login.ihg02wjjpfgye2jo.woff2")
+    format("woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.header-border{
-    padding: 12px 0 0 0;
-    border-bottom: 0.1px solid rgb(84, 89, 105);
+.logo {
+  margin: 24px 24px 0;
+  padding-left: 8.2px;
 }
 
-.sign-full-container{
-    display: flex;
-    flex-direction: column;
-    margin: 8px 12px 0 12px;
+.header-border {
+  padding: 12px 0 0 0;
+
+  border-bottom: 0.1px ridge rgb(69, 71, 80);
+  opacity: 0.1;
 }
 
-.sign-form{
-   padding: 20px 20px 0 20px;
+.sign-full-container {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 12px 0 12px;
 }
 
+.sign-form {
+  padding: 20px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.headline {
+  font-family:
+    sohne-var,
+    sohne-woff,
+    Helvetica Neue,
+    Arial,
+    sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #3c4257;
+  letter-spacing: -0.2px;
+  line-height: 22px;
+  font-feature-settings: "pnum";
+  white-space-collapse: collapse;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  /* font-family: sohne-var, sohne-woff, "Helvetica Neue", Arial, sans-serif; */
+}
+.form-content .text-content {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.another-way {
+  display: flex;
+  flex-direction: column;
+}
+.input-box {
+  margin-top: 3px;
+  padding: 8px 12px;
+  line-height: 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  border: 1px solid rgb(39, 57, 81);
+}
+.password-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}

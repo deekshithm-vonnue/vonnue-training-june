@@ -27,44 +27,37 @@
     <main>
       <div class="sign-full-container">
         <div class="sign-form">
-          <h1>Sign in to your account</h1>
+          <h1 class="headline">Sign in to your account</h1>
           <form>
             <div>
-              <div>
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" />
-                <div>
-                  <label for="password">Password</label>
-                  <span>Forget your password?</span>
+              <div class="form-content">
+                <label for="email" class="text-content">Email</label>
+                <input id="email" name="email" type="email" class="input-box"/>
+                <div class="password-container">
+                  <label for="password" class="text-content">Password</label>
+                  <span class="text-content">Forget your password?</span>
                 </div>
-                <input id="password" name="password" type="password" />
+                <input id="password" name="password" type="password" class="input-box"/>
                 <div>
-                  <input type="checkbox" id="reminder" name="reminder" />
+                  <input type="checkbox" id="reminder" name="reminder" /> Rem
                 </div>
                 <button>Sign in</button>
               </div>
               <div>Or sign in with</div>
-              <div>
+              <div class="another-way">
                 <a> Google </a>
                 <a>Passkey</a>
                 <a>SSO</a>
               </div>
             </div>
           </form>
-          </div>
-          <div>
-             <div>
-                New ro Stripe?
-             </div>
-             <div>
-              Create account
-             </div>
-          </div>
-        
+        </div>
+        <div>
+          <div>New ro Stripe?</div>
+          <div>Create account</div>
+        </div>
       </div>
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
   </body>
 </html>
