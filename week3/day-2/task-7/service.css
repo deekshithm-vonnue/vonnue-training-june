@@ -1,0 +1,75 @@
+html {
+  scroll-behavior: smooth;
+}
+.header {
+  background-color: bisque;
+  border: 1px solid black;
+  transition: 3s ease;
+}
+.progress-box {
+  width: 50%;
+  position: fixed;
+  left: 100px;
+  height: 10px;
+  background-color: red;
+}
+#progress-bar {
+  position: fixed;
+  width: 0px;
+  height: 10px;
+  z-index: 1;
+  background-color: green;
+  transition: width 1s;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+}
+
+input {
+  width: 50%;
+  height: 40px;
+}
+
+.hidden {
+  display: none;
+}
+
+.highlight {
+  background-color: yellow;
+}
+#article-design {
+  color: rgb(27, 27, 100);
+}
+#article-software {
+  color: rgb(4, 82, 56);
+}
+#article-saas {
+  color: rgb(83, 206, 83);
+}
+.headline {
+  color: red;
+}
+
+.articles {
+  border: 1px solid rgb(34, 33, 128);
+  transition: 2s ease;
+}
+
+.visible {
+  border: 10px solid yellow;
+}
+
+.back-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background: rgb(28, 128, 158);
+  color: wheat;
+  border-radius: 4px;
+}
+.back-top:hover {
+  background-color: red;
+}
