@@ -1,31 +1,31 @@
- .overlay{
-    display: none;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(2px);
-    gap: 30px;
+.overlay {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(2px);
+  gap: 30px;
 }
-.overlay-img{
-    width: 60%;
-    height: 40%;
-}
-
-.buttons{
-    width: 80px;
-    height: 80px;
-    font-size: 30px;
-} 
-dialog{
-    position: fixed;
-    width: 100%;
-    height:100%;
-    background-color: rgba(0, 0, 0, 0);
+.overlay-img {
+  width: 60%;
+  height: 40%;
 }
 
-.hidden{
-    overflow: hidden;
+.buttons {
+  width: 80px;
+  height: 80px;
+  font-size: 30px;
+}
+dialog {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.hidden {
+  overflow: hidden;
 }
