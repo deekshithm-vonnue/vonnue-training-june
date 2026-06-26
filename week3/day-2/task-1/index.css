@@ -1,0 +1,25 @@
+#top-container {
+  height: 400px;
+  width: 400px;
+  background-color: blue;
+}
+
+#middle-container {
+  margin-left: 40px;
+  margin-top: 40px;
+  height: 300px;
+  width: 300px;
+  background-color: yellow;
+}
+
+#bottom-container {
+  margin-left: 40px;
+  margin-top: 40px;
+  height: 200px;
+  width: 200px;
+  background-color: red;
+}
+
+form {
+  margin: 10px 10px;
+}

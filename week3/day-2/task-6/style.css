@@ -1,0 +1,17 @@
+.accordian {
+  width: 100%;
+  text-align: start;
+  padding-left: 30px;
+  font-size: 20px;
+  border: none;
+}
+
+.active,
+.accordian:hover {
+  background-color: rgb(107, 252, 252);
+}
+
+.panel {
+  display: none;
+  padding-left: 10px;
+}
