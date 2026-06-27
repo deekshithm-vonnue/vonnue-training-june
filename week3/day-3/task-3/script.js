@@ -4,12 +4,12 @@ let users = [
   { id: 3, name: "hawas" },
   { id: 4, name: "alan" },
 ];
-let global = 2;
+
 //impure
 function updateUser(users, id, changes) {
   users.forEach((element) => {
     if (element.id == id) {
-      element.id = changes + global;
+      element.id = changes;
     }
   });
 }
@@ -17,12 +17,14 @@ updateUser(users, 2, 5);
 console.log(users);
 
 //pure
+let modified = structuredClone(users);
 function updateUsers(users, id, changes) {
-  modified.forEach((element) => {
+  users.forEach((element) => {
     if (element.id == id) {
       element.id = changes;
     }
   });
 }
-updateUsers(users, 4, 2);
+updateUsers(modified, 4, 2);
 console.log(users);
+console.log(modified);
