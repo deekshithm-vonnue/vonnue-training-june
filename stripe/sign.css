@@ -150,3 +150,40 @@
   margin: 0 4px ;
 }
 
+@media (min-width:768px) {
+  .logo {
+    margin: 25.5px 25.5px 0;
+}
+.sign-full-container{
+  align-items: center;
+  padding-top: 24px;
+  margin: 0 16px;
+  border-left: 1px ridge rgba(69, 71, 80, 0.1);
+  border-right: 1px ridge rgba(69, 71, 80, 0.1);
+}
+.card-container{
+  padding-top: 10px;
+}
+.card{
+
+  /* background-color: yellow; */
+    background-color: white;
+  border-radius: 6px;
+  width: 368px;
+   padding-top: 14px;
+   padding: 10px;
+   box-shadow: 0px 0px 1px grey;
+  
+}
+body{
+  background-image: url(//b.stripecdn.com/dashboard-fe-statics-srv/assets/public/login-wave-dpr2-md-1500x1250.webp);
+  background-size:cover;
+  background-repeat: no-repeat;
+
+
+  
+}
+.header-border{
+  padding-top: 20px;
+}
+}
