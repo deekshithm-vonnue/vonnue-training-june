@@ -1,18 +1,18 @@
 @font-face {
   font-family: sohne-var;
-  src: url(https://b.stripecdn.com/dashboard-fe-statics-srv/assets/login.kzwa0es4w0qij3gh.woff2)
-    format("woff2");
+  src: url(/stripe/font/login.kzwa0es4w0qij3gh.woff2) format("woff2");
 }
 
 @font-face {
   font-family: sohne-woff;
-  src: url("https://b.stripecdn.com/dashboard-fe-statics-srv/assets/login.ihg02wjjpfgye2jo.woff2")
-    format("woff2");
+  src: url(/stripe/font/login.ihg02wjjpfgye2jo.woff2) format("woff2");
 }
 * {
   margin: 0;
   padding: 0;
+    
 }
+
 
 .logo {
   margin: 24px 24px 0;
@@ -29,23 +29,22 @@
 .sign-full-container {
   display: flex;
   flex-direction: column;
-  margin: 8px 12px 0 12px;
+  margin: 7px 12px 0 12px;
+  height: 88vh;
+
 }
 
 .sign-form {
-  padding: 20px 20px 0 20px;
+  padding: 20px 20px 24px 20px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
+  
 }
 
 .headline {
-  font-family:
-    sohne-var,
-    sohne-woff,
-    Helvetica Neue,
-    Arial,
-    sans-serif;
+  font-family: sohne-var, sohne-woff, "Helvetica Neue", Arial, sans-serif;
+
   font-weight: 400;
   font-size: 20px;
   color: #3c4257;
@@ -58,27 +57,96 @@
 .form-content {
   display: flex;
   flex-direction: column;
-  /* font-family: sohne-var, sohne-woff, "Helvetica Neue", Arial, sans-serif; */
 }
-.form-content .text-content {
+.text-content {
   font-size: 14px;
+  font-family: sohne-var, sohne-woff, "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   line-height: 20px;
+  color: #3c4257;
 }
 .another-way {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .input-box {
-  margin-top: 3px;
+  box-sizing: border-box;
+    font-family: sohne-var, sohne-woff, "Helvetica Neue", Arial, sans-serif;
+
+  margin-top: 4px;
+  align-items: baseline;
   padding: 8px 12px;
   line-height: 24px;
   border-radius: 6px;
-  font-size: 16px;
-  border: 1px solid rgb(39, 57, 81);
+  font-size: 18px;
+  border: none;
+  outline: 1px solid rgba(39, 57, 81, 0.164);
+  height: 44px;
 }
 .password-container {
   display: flex;
   justify-content: space-between;
-  padding-top: 25px;
+  padding-top: 16px;
 }
+
+.remember-container {
+  padding-top: 16px;
+  display: flex;
+  align-items: center;
+}
+.sign-button {
+  margin-top: 15px;
+  padding: 13px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #635bff73;
+   outline-width: 3px ; 
+  color: white;
+  font-family: sohne-var, sohne-woff, "Helvetica Neue", Arial, sans-serif;
+  border-radius: 6px;
+  border: none;
+}
+
+.signinwith {
+  padding: 18px 0px 15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 12px;
+  color: #3c4257ea;
+  font-weight: 400;
+  letter-spacing: -0.15px;
+}
+
+.another-way {
+  display: flex;
+  gap: 10px;
+  margin-top: 3px;
+}
+
+.sign-in-anchor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: 1px solid rgba(39, 57, 81, 0.164);
+  font-family: sohne-var, sohne-woff, "Helvetica Neue", Arial, sans-serif;
+  color: #273951;
+  border-radius: 6px;
+}
+
+.new-account-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(248, 250, 253);
+  gap: 4px;
+  font-family: sohne-var, sohne-woff, "Helvetica Neue", Arial, sans-serif;
+  height: 64px;
+  border: 1px solid rgb(236, 241, 246);
+  border-radius: 6px;
+  font-size: 13px;
+  margin: 0 4px ;
+}
+
