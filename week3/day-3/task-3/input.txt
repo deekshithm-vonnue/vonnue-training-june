@@ -1,0 +1,6 @@
+rollno,name,age
+1,deekshith,12
+2,rida,11
+3,ameesha,15
+4,riya,19
+5,hawas,24
