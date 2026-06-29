@@ -73,6 +73,7 @@
   border-radius: 10px;
   border: none;
   text-wrap-mode: nowrap;
+  text-decoration: none;
 }
 
 .contact-sales {
@@ -96,19 +97,7 @@
   font-family: "Sohne-Double";
   font-weight: 400;
 }
-/* .hero-section {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin: 0px 87px;
-  padding: 36px 16px;
-  width: 1266px;
-  border: 1px;
-  height: 666px;
-}
-.hero-content {
-  margin: 0 70px;
-} */
+
 
 .card {
   border-top: 1px ridge rgba(69, 71, 80, 0.1);
@@ -213,5 +202,4 @@
   border-radius: 6px;
 }
 
-body {
-}
+
