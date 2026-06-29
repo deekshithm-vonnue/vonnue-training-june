@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  
+  font-family: sohne-var, sohne-woff, "Helvetica Neue", Arial, sans-serif;
 }
 @font-face {
   font-family: sohne-var;
@@ -55,7 +57,7 @@
 .nav-button {
   display: flex;
   justify-content: flex-end;
-  margin-left: 498px;
+  margin-left: 389px;
 }
 
 .left-section {
@@ -63,21 +65,28 @@
 }
 
 .sign-in {
+  display: flex;
   background-color: white;
   padding: 12px 15px;
   font-size: 14px;
   color: #ff8c00;
   border-radius: 10px;
   border: none;
+  text-wrap-mode: nowrap;
 }
 
 .contact-sales {
+  display: flex;
+  box-sizing: border-box;
   background-color: #533afd;
-  padding: 15px 20px;
+  padding: 11px 20px;
   color: white;
   margin-left: 10px;
-  border-radius: 10px;
+  border-radius: 4px;
+  gap: 5px;
   border: none;
+
+  text-wrap-mode: nowrap;
 }
 
 .nav-section {
@@ -103,7 +112,6 @@
 
 .card {
   border-top: 1px ridge rgba(69, 71, 80, 0.1);
-  border-bottom: 1px ridge rgba(69, 71, 80, 0.1);
 }
 .hero-section {
   margin: 0 275px;
@@ -130,40 +138,80 @@
 }
 .request-anchor {
   background-color: #533afd;
-  color: white ;
+  color: white;
   font-size: 16px;
-    font-family: sohne-var, sohne-woff, "Helvetica Neue", Arial, sans-serif;
+  font-family: sohne-var, sohne-woff, "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   padding: 15.5px 24px 16.5px 15.5px;
   border-radius: 6px;
-
 }
-.request-container{
-    display: flex;
-    justify-content: flex-start;
+.request-container {
+  display: flex;
+  justify-content: flex-start;
 }
-.brand-container{
-    border-top: 1px ridge rgba(69, 71, 80, 0.1);
+.brand-container {
+  border-top: 1px ridge rgba(69, 71, 80, 0.1);
 }
-.logo-list{
-    
-    height: 72px;
-    list-style: none;
-   display: flex;
+.logo-list {
+  height: 72px;
+  list-style: none;
+  display: flex;
   transform: translate3d(0, 0, 0);
   overflow: hidden;
-
 }
 
 @keyframes slideshow {
-100% { 
-    transform: translateX(-200%);  
+  100% {
+    transform: translateX(-200%);
   }
 }
 
-.each-brand{
-     display: flex;
-    align-items: center;
-     transform: translate3d(0, 0, 0);
-     animation: slideshow 12s linear infinite;
+.each-brand {
+  display: flex;
+  align-items: center;
+  transform: translate3d(0, 0, 0);
+  animation: slideshow 12s linear infinite;
+}
+.section-container {
+  padding: 80px 16px;
+}
+.background {
+  background-image: url(/stripe/images/sessions-2026-on-demand-bg.png);
+  background-size: cover;
+  height: 400px;
+  position: relative;
+  border-radius: 6px;
+}
+
+.stripe-session-logo {
+  position: absolute;
+  right: 30px;
+  bottom: 22px;
+}
+.text-content {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px;
+  color: white;
+  gap: 40px;
+}
+
+.text-content h2 {
+  font-size: 48px;
+  max-width: 658px;
+  font-weight: 300;
+}
+.text-content a {
+  display: flex;
+}
+.watch-now {
+  display: flex;
+  gap: 3px;
+  background: white;
+  padding: 15px 24px 16.5px 24px;
+  color: #533afd;
+  border-radius: 6px;
+}
+
+body {
 }
