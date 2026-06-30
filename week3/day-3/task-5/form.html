@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="scripts.js" defer></script>
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Registration Form</h1>
+    </header>
+    <main>
+      <form action="/action_page.php" method="get" id="form">
+        <fieldset>
+          <legend>Personal Details</legend>
+          <label for="name">Name</label>
+          <input type="text" id="name" /><span></span><br /><br />
+          <label for="email">Email</label>
+          <input id="email" /><span></span><br /><br />
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" /><span></span><br /><br />
+          <label for="dob">Date of birth</label>
+          <input type="date" id="dob" /> <span></span><br /><br />
+          <label for="age">Age</label>
+          <input type="number" id="age" /><span></span><br /><br />
+          <label for="linkedin">Linkendin Profile</label>
+          <input id="linkedin" name="profile" /><span></span><br /><br />
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Account</legend>
+          <label for="username">Username</label>
+          <input type="text" id="username" /><span></span><br /><br />
+          <label for="password">New Password</label>
+          <input id="password" /><span></span><br /><br />
+          <label for="confirmpassword">Confirm Password</label>
+          <input id="confirmpassword" /><span></span><br /><br />
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
