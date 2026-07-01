@@ -1,0 +1,44 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.task-columns {
+  padding: 10px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.281);
+}
+
+.tasks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.task {
+  padding: 5px 10px;
+  background-color: rgb(50, 150, 150);
+}
+
+.placeholder {
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+}
+
+.dragged-enter {
+  color: blue;
+}
+
+.dragging{
+  color:yellow
+}
+.selected{
+    background-color: red;
+}
+.dragged-enter{
+    background-color: green;
+}
