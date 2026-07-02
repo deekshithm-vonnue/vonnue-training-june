@@ -1,0 +1,13 @@
+.comment-container {
+  display: flex;
+  flex-direction: column;
+}
+.commentarea {
+  height: 200px;
+}
+.comment {
+  background-color: whitesmoke;
+  border: 3px solid rgb(75, 74, 74);
+  padding-bottom: 9px;
+  margin: 15px 15px;
+}
