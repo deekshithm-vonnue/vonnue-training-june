@@ -105,7 +105,6 @@ function loadState() {
 
 loadState();
 
-
 let selectedTask = null;
 let currentColumn = 0;
 

@@ -33,12 +33,12 @@ body {
   color: blue;
 }
 
-.dragging{
-  color:yellow
+.dragging {
+  color: yellow;
 }
-.selected{
-    background-color: red;
+.selected {
+  background-color: red;
 }
-.dragged-enter{
-    background-color: green;
+.dragged-enter {
+  background-color: green;
 }

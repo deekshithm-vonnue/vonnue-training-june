@@ -7,7 +7,7 @@ const addButton = document.querySelector(".addcomment");
 addButton.addEventListener("click", (event) => {
   const textarea = document.querySelector(".commentarea");
 
-  if (textarea.value.trim() === '') {
+  if (textarea.value.trim() === "") {
     return;
   }
 
@@ -105,7 +105,7 @@ function displayReplyContainer(parentId) {
 function addReply(commentid) {
   const textarea = document.getElementById(`reply-field: ${commentid}`);
 
-  if (textarea.value.trim() === '') {
+  if (textarea.value.trim() === "") {
     return;
   }
 
